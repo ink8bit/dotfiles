@@ -11,8 +11,10 @@ export PATH="$HOME/.rbenv/shims:$PATH"
 # Add Visual Studio Code (code)
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
+# Update config
+alias ca='source ~/.bash_profile'
 
-alias bpa='source ~/.bash_profile'
+# List all
 alias l='ls -lhaF'
 
 # brew

@@ -3,6 +3,9 @@
 # vs code
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
+# Update config
+alias ca='source ~/.zshrc'
+
 # brew
 alias bl='brew list'
 alias bd='brew doctor'
@@ -30,5 +33,3 @@ alias gb='git branch'
 alias gl='git log --pretty=format:"%h - %an, %ar : %s"'
 alias gc='git checkout'
 alias gd='git diff'
-
-alias bpa='source ~/.zshrc'
