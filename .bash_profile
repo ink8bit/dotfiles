@@ -24,13 +24,12 @@ alias bo='brew outdated'
 alias bu='brew update && brew upgrade'
 
 # yarn
-alias yi='yarn install'
+alias ya='yarn add'
 alias yo='yarn outdated'
 alias yu='yarn upgrade-interactive --latest'
 
 # npm
-alias nog='npm list -g --depth=0 --outdated'
-alias no='npm list --depth=0 --outdated'
+alias no='npm outdated'
 alias nlg='npm list -g --depth=0'
 alias nl='npm list --depth=0'
 
