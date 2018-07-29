@@ -2,5 +2,6 @@
 
 ## Contents
 
-* [zsh](.zshrc)
-* [bash](.bashrc)
+* [zsh config](.zshrc)
+* [vim config](.vimrc)
+
