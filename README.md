@@ -1,7 +1,3 @@
 # dotfiles
 
-## Contents
-
-* [zsh config](.zshrc)
-* [vim config](.vimrc)
-
+My dot files
