@@ -4,7 +4,7 @@
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 # Update config
-alias ca='source ~/.zshrc'
+alias cu='source ~/.zshrc'
 
 # brew
 alias bl='brew list'
@@ -21,10 +21,6 @@ alias yu='yarn upgrade-interactive --latest'
 alias no='npm outdated'
 alias nlg='npm list -g --depth=0'
 alias nl='npm list --depth=0'
-
-# python
-alias pe='python3 -m venv penv'
-alias pea='source penv/bin/activate'
 
 # git
 alias gs='git status'
