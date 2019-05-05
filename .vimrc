@@ -42,3 +42,7 @@ set spellfile=~/.vim/spell/en.utf-8.add
 set spellfile+=~/.vim/spell/code.utf-8.add
 
 filetype plugin indent on
+
+" show whitespace characters
+set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¶,precedes:«,extends:»
+set list
