@@ -1,5 +1,7 @@
 # User configuration
 
+export PATH="/usr/local/bin:$PATH"
+
 # vs code
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
@@ -28,3 +30,14 @@ alias gb='git branch'
 alias gl='git log --pretty=format:"%h - %an, %ar : %s"'
 alias gc='git checkout'
 alias gd='git diff'
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# golang
+export GOPATH=$HOME/Go
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
