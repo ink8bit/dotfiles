@@ -1,12 +1,26 @@
-# User configuration
+export PS1="%d $ "
+export PS1="%F{blue}@%n%f [%1d] $ "
+export CLICOLOR=1
 
-export PATH="/usr/local/bin:$PATH"
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 # vs code
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 # Update config
 alias cu='source ~/.zshrc'
+
+# Files
+alias l="ls -lhaF"
+alias doc="cd ~/Documents"
+
+# Swift
+alias dev="cd ~/Documents/Developer"
+# Rust
+alias rdev="cd ~/Documents/rust_apps"
+# Go
+alias godev="cd ~/Documents/go_apps"
 
 # brew
 alias bl='brew list'
@@ -32,11 +46,6 @@ alias gl='git log --pretty=format:"%h - %an, %ar: %s"'
 alias gc='git checkout'
 alias gcb="git checkout -b"
 alias gd='git diff'
-
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # golang
 export GOPATH=$HOME/Go
