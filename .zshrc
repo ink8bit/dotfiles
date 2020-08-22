@@ -27,8 +27,10 @@ alias nl='npm list --depth=0'
 # git
 alias gs='git status'
 alias gb='git branch'
-alias gl='git log --pretty=format:"%h - %an, %ar : %s"'
+alias gbD="git branch -D"
+alias gl='git log --pretty=format:"%h - %an, %ar: %s"'
 alias gc='git checkout'
+alias gcb="git checkout -b"
 alias gd='git diff'
 
 # nvm
