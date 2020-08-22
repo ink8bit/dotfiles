@@ -16,6 +16,15 @@ setopt CORRECT_ALL
 export PS1="%F{blue}@%n%f [%1~] %(?.%F{green}✔︎%f.%F{red}✘%f) %(!.#.$) "
 export CLICOLOR=1
 
+# git current branch
+autoload -Uz vcs_info
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+setopt prompt_subst
+RPROMPT=\$vcs_info_msg_0_
+zstyle ':vcs_info:git:*' formats '%F{magenta}%b%f%f'
+zstyle ':vcs_info:*' enable git
+
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
