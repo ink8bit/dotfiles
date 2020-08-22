@@ -13,8 +13,7 @@ setopt HIST_VERIFY
 setopt CORRECT
 setopt CORRECT_ALL
 
-#export PS1="%d $ "
-export PS1="%F{blue}@%n%f [%1d] $ "
+export PS1="%F{blue}@%n%f [%1~] %(?.%F{green}✔︎%f.%F{red}✘%f) %(!.#.$) "
 export CLICOLOR=1
 
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
