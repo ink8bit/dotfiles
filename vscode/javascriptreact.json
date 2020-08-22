@@ -1,0 +1,26 @@
+{
+  "React stateless component": {
+    "prefix": "stl",
+    "body": [
+      "function $1() {",
+      "\treturn (",
+      "\t\t<div>$2</div>",
+      "\t);",
+      "}",
+      "$0"
+    ],
+    "description": "React stateless component"
+  },
+  "import": {
+    "prefix": "im",
+    "body": [
+      "import ${2} from '${1}';",
+      "$0"
+    ],
+    "description": "import statement"
+  },
+  "export default": {
+    "prefix": "ed",
+    "body": "export default $0;"
+  }
+}
