@@ -1,15 +1,30 @@
-export PS1="%d $ "
+# shell configuration
+
+# case-insensitive globbing
+setopt NO_CASE_GLOB
+
+# change directory without cd command
+setopt AUTO_CD
+
+# verify command before executing
+setopt HIST_VERIFY
+
+# correct my commands
+setopt CORRECT
+setopt CORRECT_ALL
+
+#export PS1="%d $ "
 export PS1="%F{blue}@%n%f [%1d] $ "
 export CLICOLOR=1
 
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
-# vs code
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+# reset shell to defaults
+alias reset_shell="emulate -LR zsh"
 
-# Update config
-alias cu='source ~/.zshrc'
+# update config
+alias cu="source ~/.zshrc"
 
 # Files
 alias l="ls -lhaF"
