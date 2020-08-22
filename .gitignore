@@ -1,3 +1,5 @@
+# All projects
 .DS_Store
 iterm
-
+.vscode
+.idea
