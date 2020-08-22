@@ -1,0 +1,90 @@
+{
+  "console.log": {
+    "prefix": "log",
+    "body": [
+      "console.log($1);",
+      "$0"
+    ],
+    "description": "console log statement"
+  },
+  "console.error": {
+    "prefix": "err",
+    "body": [
+      "console.error($1);",
+      "$0"
+    ],
+    "description": "console error statement"
+  },
+  "import": {
+    "prefix": "im",
+    "body": [
+      "import ${2} from '${1}';",
+      "$0"
+    ],
+    "description": "import statement"
+  },
+  "require": {
+    "prefix": "rq",
+    "body": [
+      "const ${2} = require('${1}');",
+      "$0"
+    ],
+    "description": "require statement"
+  },
+  "strict": {
+    "prefix": "us",
+    "body": [
+      "'use strict';",
+      "$0"
+    ],
+    "description": "use strict declaration"
+  },
+  "describe": {
+    "prefix": "ds",
+    "body": [
+      "describe('$1', () => {$2});",
+      "$0"
+    ],
+    "description": "describe statement"
+  },
+  "tt": {
+    "prefix": "tt",
+    "body": [
+      "test('$1', () => {$2});",
+      "$0"
+    ],
+    "description": "it statement"
+  },
+  "beforeAll": {
+    "prefix": "ba",
+    "body": [
+      "beforeAll(() => {$1});",
+      "$0"
+    ],
+    "description": "beforeAll statement"
+  },
+  "beforeEach": {
+    "prefix": "be",
+    "body": [
+      "beforeEach(() => {$1});",
+      "$0"
+    ],
+    "description": "beforeEach statement"
+  },
+  "afterAll": {
+    "prefix": "aa",
+    "body": [
+      "afterAll(() => {$1});",
+      "$0"
+    ],
+    "description": "afterAll statement"
+  },
+  "afterEach": {
+    "prefix": "ae",
+    "body": [
+      "afterEach(() => {$1});",
+      "$0"
+    ],
+    "description": "afterEach statement"
+  }
+}

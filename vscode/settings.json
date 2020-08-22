@@ -1,0 +1,123 @@
+{
+  // editor
+  "debug.console.fontSize": 14,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.minimap.enabled": false,
+  "editor.snippetSuggestions": "top",
+  "editor.fontLigatures": false,
+  "editor.fontFamily": "SF Mono, Menlo, Monaco, monospace",
+  "editor.fontWeight": "500",
+  "editor.fontSize": 14,
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.trimAutoWhitespace": true,
+  "editor.tokenColorCustomizations": {
+    "[Tomorrow Night]": {
+      "textMateRules": [
+        {
+          "scope": [
+            "comment entity.name.type"
+          ],
+          "settings": {
+            "foreground": "#fd9463cb"
+          }
+        }
+      ]
+    }
+  },
+  // workbench
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#2c2c2c",
+    "terminal.foreground": "#CCB7A1",
+    "terminalCursor.foreground": "#E63980",
+    "terminal.ansiBlue": "#6D9CBE",
+    "terminal.ansiBrightBlue": "#6D9CBE",
+    "terminal.ansiBlack": "#2B2B2B",
+    "terminal.ansiBrightBlack": "#5A647E",
+    "terminal.ansiRed": "#DA4939",
+    "terminal.ansiBrightRed": "#DA4939",
+    "terminal.ansiGreen": "#A5C261",
+    "terminal.ansiBrightGreen": "#A5C261",
+    "terminal.ansiYellow": "#FFC66D",
+    "terminal.ansiBrightYellow": "#FFC66D",
+    "terminal.ansiMagenta": "#B6B3EB",
+    "terminal.ansiBrightMagenta": "#B6B3EB",
+    "terminal.ansiCyan": "#33bbc8",
+    "terminal.ansiBrightCyan": "#14f0f0",
+    "terminal.ansiWhite": "#E6E1DC",
+    "terminal.ansiBrightWhite": "#F9F7F3"
+  },
+  "workbench.settings.editor": "json",
+  "workbench.panel.defaultLocation": "right",
+  "breadcrumbs.enabled": false,
+  "breadcrumbs.filePath": "off",
+  // files
+  "files.trimFinalNewlines": true,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    ".idea": true
+  },
+  "files.associations": {
+    "*.gohtml": "html"
+  },
+  // js
+  "javascript.format.enable": true,
+  // prettier
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "prettier.printWidth": 100,
+  "prettier.bracketSpacing": true,
+  // window
+  "window.zoomLevel": 0,
+  // explorer
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  // search
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/build": true,
+    "**/coverage": true
+  },
+  // terminal
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.fontFamily": "SF Mono",
+  "terminal.integrated.drawBoldTextInBrightColors": false,
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.cursorWidth": 2,
+  "terminal.integrated.minimumContrastRatio": 4.5,
+  // telemetry
+  "telemetry.enableTelemetry": false,
+  "telemetry.enableCrashReporter": false,
+  // git
+  "git.terminalAuthentication": false,
+  "git.autofetch": false,
+  "github.gitAuthentication": false,
+  // custom
+  "[markdown]": {
+    "editor.minimap.side": "left",
+    "editor.minimap.enabled": false,
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": false
+  },
+  "[go]": {
+    "editor.insertSpaces": true,
+    "editor.formatOnSave": true,
+    "editor.tabSize": 8
+  },
+  "[svelte]": {
+    "editor.formatOnSave": false
+  },
+  "git.confirmSync": false,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "go.formatTool": "goimports",
+  "diffEditor.renderSideBySide": true,
+}
