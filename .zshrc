@@ -44,6 +44,10 @@ alias dev="cd ~/Documents/Developer"
 alias rdev="cd ~/Documents/rust_apps"
 # Go
 alias godev="cd ~/Documents/go_apps"
+# JS
+alias jsdev="cd ~/Documents/js_apps"
+# Python
+alias pydev="cd ~/Documents/py_apps"
 
 # brew
 alias bl='brew list'
@@ -72,6 +76,10 @@ alias gd='git diff'
 
 # golang
 export GOPATH=$HOME/Go
-export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:$GOROOT/bin
+
+# python
+alias py="python3"
+alias pip="pip3"
+alias act="source env/bin/activate"
+alias dact="deactivate"
