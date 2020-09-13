@@ -34,3 +34,4 @@ Sometimes I use `vim` (also without plugins, I like to keep things simple).
 - [Better TOML](https://marketplace.visualstudio.com/items?itemName=bungcip.better-toml)
 - [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=matklad.rust-analyzer)
 - [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode)
+- [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
