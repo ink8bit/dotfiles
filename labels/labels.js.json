@@ -1,0 +1,36 @@
+{
+  "owner": "",
+  "repo": "",
+  "labels": [
+    {
+      "name": "commit hooks",
+      "description": "Changes in commit hooks",
+      "color": "3B2FEE"
+    },
+    {
+      "name": "dependencies",
+      "description": "Pull requests that update a dependency file",
+      "color": "32db81"
+    },
+    {
+      "name": "jest",
+      "description": "Jest configuration changes",
+      "color": "f296c4"
+    },
+    {
+      "name": "lockfile",
+      "description": "Changes in package-lock.json",
+      "color": "eef29d"
+    },
+    {
+      "name": "node update",
+      "description": "node version update",
+      "color": "B6EABD"
+    },
+    {
+      "name": "package",
+      "description": "Changes in package.json",
+      "color": "f9ccc0"
+    }
+  ]
+}
