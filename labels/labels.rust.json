@@ -1,0 +1,11 @@
+{
+  "owner": "",
+  "repo": "",
+  "labels": [
+    {
+      "name": "crate",
+      "description": "Crate updates",
+      "color": "1ED1EC"
+    }
+  ]
+}
