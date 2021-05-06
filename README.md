@@ -10,9 +10,11 @@ Currently I use `zsh` without any plugins and without [oh-my-zsh](https://ohmyz.
 
 ## Vim
 
-Sometimes I use `vim` (also without plugins, I like to keep things simple).
-
 [vim config](.vimrc)
+
+## Neovim
+
+[neovim config](neovim/init.vim)
 
 ## VS Code
 
