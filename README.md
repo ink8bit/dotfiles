@@ -18,6 +18,10 @@ Currently I use `zsh` without any plugins and without [oh-my-zsh](https://ohmyz.
 
 ### Setup
 
+- [Neovim](https://rust-analyzer.github.io/manual.html#vimneovim)
+- [Rust analyzer](https://rust-analyzer.github.io/manual.html#vimneovim)
+- [ripgrep](https://github.com/BurntSushi/ripgrep#installation)
+
 ```console
 brew install --HEAD neovim
 brew install ripgrep
@@ -25,6 +29,8 @@ brew install rust-analyzer
 ```
 
 Install vim plug
+
+View [info](https://github.com/junegunn/vim-plug)
 
 ```console
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
