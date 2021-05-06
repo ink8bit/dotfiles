@@ -140,8 +140,6 @@ nnoremap <leader>tl :%s#\($\n\s*\)\+\%$##<CR>
 set completeopt=menuone,noinsert,noselect
 set shortmess+=c
 
-"set completeopt=menu,menuone,preview,noselect,noinsert
-
 let g:ale_completion_enabled = 1
 let g:ale_fixers = {
             \ '*': ['remove_trailing_lines', 'trim_whitespace'],
@@ -160,16 +158,9 @@ nmap <silent> ]e <Plug>(ale_next_wrap)
 
 nnoremap <leader>d :ALEGoToDefinition<CR>
 
-"let g:ale_fixers = { 'rust': ['rustfmt', 'trim_whitespace', 'remove_trailing_lines'] }
-"let g:ale_linters = {'rust': ['analyzer']}
-"let g:completion_matching_startegy_list = ['exact', 'substring', 'fuzzy']
-
 " Use <Tab> and <S-Tab> to navigate through popup menu
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-
-"lua require'lspconfig'.tsserver.setup{on_attach=require'completion'.on_attach}
-"lua require'lspconfig'.svelte.setup{on_attach=require'completion'.on_attach}
 
 " LSP
 " https://github.com/neovim/nvim-lspconfig#rust_analyzer
