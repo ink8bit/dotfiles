@@ -16,6 +16,14 @@ Currently I use `zsh` without any plugins and without [oh-my-zsh](https://ohmyz.
 
 [neovim config](neovim/init.vim)
 
+### Setup
+
+```console
+brew install --HEAD neovim
+brew install ripgrep
+brew install rust-analyzer
+```
+
 ## VS Code
 
 [VS Code](https://code.visualstudio.com) is my editor of choice.
