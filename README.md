@@ -24,6 +24,13 @@ brew install ripgrep
 brew install rust-analyzer
 ```
 
+Install vim plug
+
+```console
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
 ## VS Code
 
 [VS Code](https://code.visualstudio.com) is my editor of choice.
