@@ -16,6 +16,7 @@ set smartcase
 set nowrap
 set hidden
 set nocompatible
+set updatetime=50
 
 " color column - sets a vertical column
 set cc=80,100
@@ -36,6 +37,9 @@ set noshowmode
 " always show a signcolumn
 set signcolumn=yes
 
+set completeopt=menuone,noinsert,noselect
+set shortmess+=c
+
 syntax enable
 filetype plugin indent on
 
@@ -43,8 +47,7 @@ set listchars=tab:\ \ ,trail:.
 set list
 
 " spell checking highlighting
-hi SpellBad cterm=strikethrough
-"hi SpellBad cterm=strikethrough ctermfg=203 guifg=#ff5f5f
+hi SpellBad cterm=strikethrough ctermfg=203 guifg=#ff5f5f
 hi SpellLocal cterm=underline ctermfg=203 guifg=#ff5f5f
 hi SpellRare cterm=underline ctermfg=203 guifg=#ff5f5f
 hi SpellCap cterm=underline ctermfg=203 guifg=#ff5f5f
@@ -95,7 +98,7 @@ nnoremap <leader>tv :Vex<CR>
 nnoremap <leader><CR> :so ~/.config/nvim/init.vim<CR>
 
 " removes highlighting
-nnoremap <leader>nl :nohls<CR>
+nnoremap <leader>hh :nohls<CR>
 " format code
 nnoremap <leader>p :Prettier<CR>
 " show buffers
@@ -137,9 +140,6 @@ let g:lightline = {
 nnoremap <leader>rt :%s/\s\+$//e<CR>
 nnoremap <leader>tl :%s#\($\n\s*\)\+\%$##<CR>
 
-set completeopt=menuone,noinsert,noselect
-set shortmess+=c
-
 let g:ale_completion_enabled = 1
 let g:ale_fixers = {
             \ '*': ['remove_trailing_lines', 'trim_whitespace'],
@@ -147,7 +147,7 @@ let g:ale_fixers = {
             \ 'typescript': ['prettier', 'eslint'],
             \ 'css': ['prettier']
             \}
-"let g:ale_linters_explicit = 1
+let g:ale_linters_explicit = 1
 let g:ale_fix_on_save = 1
 let g:ale_completion_autoimport = 1
 let g:ale_sign_error = 'E'
