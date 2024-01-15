@@ -77,6 +77,7 @@ alias gd='git diff'
 # golang
 export GOPATH=$HOME/Go
 export PATH=$PATH:$GOPATH/bin
+export GOBIN=$HOME/go/bin/
 
 # python
 alias py="python3"
